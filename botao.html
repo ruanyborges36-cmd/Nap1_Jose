@@ -1,0 +1,49 @@
+<!--10. Crie um botão estilizado com a classe `.btn`.**
+Propriedades mínimas:
+• cor de fundo;
+• cor do texto;
+• padding;
+• bordas arredondadas;
+• cursor pointer;
+• efeito hover com alteração de cor.-->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style10.css" />
+    <title>Questão 10</title>
+</head>
+
+<style>
+
+    body{
+        background-color: rgb(235, 204, 234);
+    }
+
+    h1{
+    text-align: center;
+    font-family:arial;
+    }
+    .btn {
+    background-color: #7102a4; 
+    color: #ffffff;            
+    padding: 15px 20px;       
+    border-radius: 5px;       
+    cursor: pointer;           
+    border: none;             
+    font-size: 20px;
+    transition: background-color 0.3s ease; 
+
+    }
+.btn:hover {
+    background-color: #b3002a;
+}
+    
+</style>
+
+<body>
+   <h1><button class="btn">Enviar</button></h1> 
+
+</body>
+</html>
