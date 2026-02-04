@@ -1,0 +1,145 @@
+<!--Crie uma página HTML que possua os elementos:
+<header>: uma imagem e um título
+<nav>: lista de menu com 5 itens
+<main>: duas <section> com 3 <article> em cada
+Coloque um título para cada seção
+Dentro de cada artigo, coloque subtítulos e dois parágrafos
+<footer>
+Crie um arquivo CSS separado e inclua no documento HTML
+Utilize pelo menos uma regra de cada um dos seletores: ID, classe, filho e atributo
+Podem ser utilizadas quaisquer propriedades-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Extra</title>
+
+</head>
+<style>
+
+    body{
+        background-color: rgb(240, 196, 227) ;
+    }
+    #topo {
+    background-color: rgb(240, 196, 227);
+    padding: 10px;
+}
+
+
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: #eb5d5d;
+    padding: 10px;
+}
+
+nav > ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+section {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+
+
+main {
+    font-family: Arial;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #e6cfcf;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 1em;
+    color: #420413;
+}
+</style>
+<body>
+
+    <header id="topo">
+        <img src="universitarias.png"  width="200" alt="Imagem que motra três meninas universitarias feliz">
+        <h1>Vida caotica de três universitarias</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Rotina</a></li>
+            <li><a href="#">Amizade</a></li>
+            <li><a href="#">Desafios</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+
+        
+        <section>
+            <h2>Nossa Rotina</h2>
+
+            <article>
+                <h3>Encontros Diários</h3>
+                <p>Nossas manhãs são cheias de desencontros e mal lembramos da última vez que tomamos café juntas. A Vi é a responsável por deixar o café pronto todas as manhãs.</p>
+                <p>A hora do almoço é sagrada: eu cuido da comida e, enquanto não estiverem todas à mesa, ninguém começa a comer.</p>
+            </article>
+
+            <article>
+                <h3>Trabalhos em Grupo</h3>
+                <p>Ruana e Victória são da mesma turma e formam uma dupla sensacional.</p>
+                <p>Quase todas as reuniões acontecem aqui em casa e, apesar do caos constante, o resultado final sempre aparece.</p>
+            </article>
+
+            <article>
+                <h3>Provas e Ansiedade</h3>
+                <p>A semana de provas sempre chega mais rápido do que o esperado. Quando o peso aumenta para uma, tentamos redistribuir as tarefas domésticas, diminuido os afazeres de quem está mais atarefada.</p>
+                <p>Final de semestre é uma loucura total, está tudo bem se alguém surtar, o importante é não desistir.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Amizade e Superação</h2>
+
+            <article>
+                <h3>Parceria que Salva</h3>
+                <p>Uma ajuda a outra nos momentos mais difíceis.</p>
+                <p>Juntas, tudo fica mais leve e possível, provando que a união e fofoca faz total diferença.</p>
+            </article>
+
+            <article>
+                <h3>Momentos de Caos</h3>
+                <p>Prazos apertados, sono atrasado e muita correria definem nossos dias de luta intensa.</p>
+                <p>No final, cada perrengue vira história.</p>
+            </article>
+
+            <article>
+                <h3>Sonhos e Conquistas</h3>
+                <p>Cada semestre vencido é uma vitória celebrada com muito alívio e orgulho por estarmos no caminho certo.</p>
+                <p>Mesmo cansadas, seguimos firmes em busca de um futuro brilhante para cada uma de nós.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Feito com amizade, amor, café e muita fé.</p>
+    </footer>
+
+</body>
+</html>
