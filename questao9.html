@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questão 9</title>
+</head>
+<body>
+    <h1>questão 9</h1>
+    <img src="questao9.png" alt="Comando da questao 9" width="400">
+
+    <script>
+        let maiores = 0;
+let menores = 0;
+
+for (let i = 1; i <= 3; i++) {
+  let nome = prompt("Digite o nome da pessoa " + i + " (ou digite '0' para encerrar):");
+
+  if (nome === null || nome === "0") {
+    break;
+  }
+
+  let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+  if (idade >= 18) {
+    maiores++;
+  } else {
+    menores++;
+  }
+}
+
+alert("Maiores de idade: " + maiores + "\nMenores de idade: " + menores);
+    </script>
+</body>
+</html>

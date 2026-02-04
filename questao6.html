@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+    <img src="questao6.png" alt="Comando da questao 6" width="400">
+    <script>
+        let N = parseInt(prompt("Digite um número inteiro:"));
+let resultado = "Números primos entre 1 e " + N + ":\n";
+for (let num = 2; num <= N; num++) {
+    let ePrimo = true;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            ePrimo = false;
+            break;
+        }
+    }
+    if (ePrimo) {
+        resultado += num + " ";
+    }
+}
+alert(resultado);
+    </script>
+</body>
+</html>
